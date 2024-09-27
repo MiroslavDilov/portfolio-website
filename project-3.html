@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reinforcement Learning Project | Miroslav Dilov</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Reinforcement Learning Model Comparison in MuJoCo Humanoid-v4 Environment</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#about">About Me</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-details" data-aos="fade-up">
+        <h2>Project Overview</h2>
+        <p>This project was unique, and really different than the other ones i've worked on. For this one, I tested four different RL algorithms, and measured their performance in the MuJoCo Humanoid Enviroment. The data in the notebook was gathered during training of the algorithms.</p>
+
+        <h3>Features</h3>
+        <ul class="features-list">
+            <li>Reinforcement Learning</li>
+            <li>Hyperparameter Optimisation</li>
+            <li>Loss analysis</li>
+        </ul>
+
+
+        <h3>Challenges & Solutions</h3>
+        <p class="indented-paragraph">
+            The main challenge of this project was to figure out where to start. I knew I wanted to try out reinforcement learning, and I wanted it to be something more complex (or at least, not boring). I had to read a lot about what reinforcement learning is, how training actually happens, how models' performance is tracked. <a href="https://spinningup.openai.com/en/latest/" target="_blank">'OpenAI's Spinning up</a> has helped me a ton to understand how to start this project.
+        </p>
+        
+        <p class="indented-paragraph">
+            Another big challenge was to find out what data to track from the RL models. I chose to track the episode mean reward, and episode mean step, and for the SAC and TD3 the actor loss. And for finding this data, I found a way to download the data after training them for a specific amount of time. There is a tensorflow window that you can open during training of the models that has all of the information of all of the different models' performance that are currently being trained
+        </p>
+        
+        <h3>Live Demo & Source Code</h3>
+        <p><a href="https://mybinder.org/v2/gh/MiroslavDilov/rl-algorithms-comparison/HEAD?labpath=rl_algorithms_comparison.ipynb" target="_blank">View Live Project</a> | <a href="https://github.com/MiroslavDilov/students-performance-project" target="_blank">Source Code</a></p>
+        <h6>The gif below is of the model that performed the best (PPO)</h6>
+        <img src="files/project 3.gif" alt="Screenshot of Project 1">
+    </section>
+
+    <footer>
+        <p>© 2024 Miroslav Dilov</p>
+    </footer>
+</body>
+</html>

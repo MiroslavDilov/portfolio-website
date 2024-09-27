@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Predictive Modeling for Students' Performance | Miroslav Dilov</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Predictive Modeling for Students' Performance</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#about">About Me</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-details" data-aos="fade-up">
+        <h2>Project Overview</h2>
+        <p>This machine learning project aimed at exploring and predicting factors that significantly influence students' academic performance. I used different ML algorithms, and aimed to find the most well performing one, and used these models to find the most important features for it.</p>
+
+        <h3>Features</h3>
+        <ul class="features-list">
+            <li>Clustering</li>
+            <li>Predictive Modeling</li>
+            <li>Feature analysis</li>
+        </ul>
+
+
+        <h3>Challenges & Solutions</h3>
+        <p class="indented-paragraph">
+            The first challenge, as with most machine learning projects, was the data, since it wasn't clean. I preprocessed it, and went on to clustering, which was also quite tough to interpret, since the clusters had revealed a weird way that the grades were formatted 
+        </p>
+        
+        <p class="indented-paragraph">
+            The models, chosing what models to compare, and how, was another difficult challenge. I settled on comparing the r-score, MSE, and MAE. The most difficult thing with the models, was that there were a lot of columns that were correlated with one another, which introduced multicolinearity. This was tough to weed out, as I had to run VIF, to find the features that were highly correlated, and remove them. This is the reason why before running the training on the models, I have removed so many columns
+        </p>
+        
+        <h3>Live Demo & Source Code</h3>
+        <p><a href="https://colab.research.google.com/drive/1-VA3rx_Q2OofIEAFqtDDpo6C_G-g2rgi?usp=sharing" target="_blank">View Live Project</a> | <a href="https://github.com/MiroslavDilov/students-performance-project" target="_blank">Source Code</a></p>
+
+        <img src="files/project 2.svg" alt="Screenshot of Project 1">
+    </section>
+
+    <footer>
+        <p>© 2024 Miroslav Dilov</p>
+    </footer>
+</body>
+</html>

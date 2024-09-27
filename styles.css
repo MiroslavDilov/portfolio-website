@@ -1,0 +1,363 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #624E88; /* Darker purple for the header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    height: 100v;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #8967B3; /* Lighter purple for hover effect */
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+#portfolio .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+
+.projects article {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+.projects article:hover {
+    transform: scale(1.05); /* Slight zoom on hover for interactivity */
+    border-color: #8967B3; /* Change border color on hover */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #8967B3; /* Lighter purple for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #624E88; /* Darker purple for hover effect */
+    transform: translateY(-3px); /* Subtle "pop-up" effect */
+}
+
+footer {
+    background-color: #624E88; /* Darker purple for the footer */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+    animation: slideUp 1s ease-in-out; /* Footer slide-up animation */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header Styling */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content */
+}
+
+.profile-photo {
+    width: 80px; /* Adjust the size as needed */
+    height: 80px;
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 20px; /* Space between the photo and your name */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* Project Page Specific Styles */
+.project-details {
+    padding: 50px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.project-details img {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.project-details h2, .project-details h3 {
+    margin-top: 30px;
+    color: #624E88; /* Use the darker purple for headings */
+}
+
+.project-details ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.project-details a {
+    color: #8967B3; /* Use the lighter purple for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-details a:hover {
+    color: #624E88; /* Darker purple on hover */
+    text-decoration: underline;
+}
+
+html, body {
+    height: 100%; /* Allow the page to take up 100% of the viewport height */
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Add a keyframe animation for sliding the footer up */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-details {
+    flex-grow: 1;
+    padding: 50px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease-in-out forwards; /* Smooth fade-in on load */
+    animation-delay: 0.5s; /* Delay the animation slightly */
+}
+
+/* Fancy Hover Effect for Links */
+a {
+    color: #8967B3; /* Use the lighter purple for links */
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #8967B3; /* Lighter purple for underline */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #624E88; /* Darker purple on hover */
+}
+
+a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+#contact {
+    padding: 50px;
+    text-align: center;
+    background-color: #f5f5f5; /* Light background for contrast */
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between icons */
+    font-size: 2rem; /* Adjust size as needed */
+}
+
+.contact-icons a {
+    color: #624E88; /* Darker purple for icons */
+    transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: #8967B3; /* Lighter purple on hover */
+}
+
+#contact {
+    padding: 50px;
+    text-align: center;
+    background-color: #f5f5f5; /* Light background for contrast */
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between icons */
+    font-size: 2rem; /* Adjust size as needed */
+    margin-bottom: 20px; /* Space between icons and email/contact form */
+}
+
+.contact-icons a {
+    color: #624E88; /* Darker purple for icons */
+    transition: color 0.3s ease;
+}
+
+.contact-icons a .cv-text {
+    font-size: 0.875rem; /* Smaller, minimalistic font size */
+    font-weight: normal; /* Make the text less bold */
+    color: #624E88; /* Ensure text matches icon color */
+}
+
+
+.contact-icons a:hover {
+    color: #8967B3; /* Lighter purple on hover */
+}
+
+/* Style for the email contact paragraph */
+.email-contact {
+    font-size: 1.2rem; /* Adjust size for visibility */
+    color: #624E88; /* Darker purple for text */
+    margin-bottom: 30px; /* Space between email and form */
+}
+
+/* Modernizing the form */
+form {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    max-width: 400px; /* Limit the form width */
+    margin: auto; /* Center the form */
+    gap: 15px; /* Space between form elements */
+}
+
+form label {
+    font-weight: bold; /* Make label text bold */
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem; /* Adjust font size */
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #8967B3; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+form button {
+    padding: 10px;
+    background-color: #8967B3; /* Lighter purple for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem; /* Adjust button font size */
+}
+
+form button:hover {
+    background-color: #624E88; /* Darker purple for hover effect */
+    transform: translateY(-3px); /* Subtle "pop-up" effect */
+}
+
+/* Target only the features list using the class */
+.features-list {
+    list-style: none; /* Removes default bullet points */
+    padding-left: 0; /* Aligns content properly */
+    margin: 20px 0; /* Adds space around the list */
+}
+
+.features-list li {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Vertically aligns the icon with text */
+    padding: 10px 0; /* Adds space between list items */
+    font-size: 1.1rem; /* Slightly larger font for readability */
+}
+
+/* Custom bullet points for features list using pseudo-element */
+.features-list li::before {
+    content: '•'; /* Replace with a checkmark or custom icon */
+    color: #624E88; /* Matches the dark purple color scheme */
+    font-size: 1.3rem;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Optional hover effect for interactivity */
+.features-list li:hover {
+    background-color: #f0f0f0; /* Subtle background change on hover */
+    border-radius: 5px; /* Slight rounding for a modern touch */
+    padding-left: 10px; /* Shift the text slightly on hover */
+}
+
+.indented-paragraph {
+    text-indent: 2em; /* Adjust the value to control the size of the indentation */
+    text-align: justify; /* Optional: For double-aligning the text as discussed earlier */
+}
+

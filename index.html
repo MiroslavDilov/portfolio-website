@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Miroslav Dilov | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container" data-aos="fade-down" data-aos-delay="500">
+            <img src="files/image.jfif" alt="Miroslav Dilov" class="profile-photo">
+            <h1>Miroslav Dilov</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+     
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>Hi, I'm Miroslav Dilov, an aspiring data scientist. Check out my work below!</p>
+    </section>
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="projects">
+            <article>
+                <h3>Impact of Renewable Energy Analysis</h3>
+                <p>Exploring the relationship between the adoption of renewable energy and  carbon emissions across different countries.</p>
+                <a href="project-1.html">View Project</a>
+            </article>
+            <!-- Add more projects -->
+            <article>
+                <h3>Predictive Modeling for Students' Performance</h3>
+                <p>Utilizing ML algorithms to build predictive models and uncover key factors in student success</p>
+                <a href="project-2.html">View Project</a>
+            </article>
+            <article>
+                <h3>Reinforcement Learning Model Comparison in MuJoCo Humanoid-v4</h3>
+                <p>Evaluating and analyzing how different RL models handle the complexities of the Humanoid-v4 task.</p>
+                <a href="project-3.html">View Project</a>
+            </article>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a person who loves to work with Data. I started to program using Python in my first year of university, two years ago. After that, I started learning Python a bit more deeply, from  Udemy courses. At the end of this course, there were Data Science projects, which piqued my interest. I started a Data Science course from 365 Data Science, which after I finished, I started an internship in Data Science. And after my data science internship, I found another one, which was about Data Engineering. I am now working on personal projects, trying out new things, and looking to further my carreer in Data Science </p>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-icons">
+            <a href="mailto:miroslav.dilov.business@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/miroslav-dilov-b576631ab/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="files/Miroslav_dilov_resume_.pdf" target="_blank" title="Download CV">
+                <i class="fas fa-file-download"></i><span class="cv-text">Download CV</span>
+            </a>
+        </div>
+        <div class="email-contact">
+            <p>E-mail: miroslav.dilov.business@gmail.com</p>
+        </div>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>© 2024 Miroslav Dilov</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // Animation duration (1 second)
+        easing: 'ease-in-out',
+        once: true, // Animation should happen only once when scrolling down
+    });
+</script>
+
+      
+</body>
+</html>
